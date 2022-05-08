@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="box">
+    <video autoplay muted loop id="myVideo">
+      <source src="/images/bkvideo.mp4" type="video/mp4">
+    </video>
+    <h1 class="header1">THE GREAT LIBRARY OF <br> ALEXANDRIA</h1>
+  </div>
+  <div class="nav">
+    <nav class="navbar">
+      <ul>
+        <!-- <li><a href=""> Home</a></li> -->
+
+
+        <% if (user) { %>
+          <li>Welcome ,<%= user.name %>
+          </li>
+          <li><a href="/dashboard">dashboard</a></li>
+          <li class="out"><a href="/logout">logout</a></li>
+
+          <% } else { %>
+
+            <li><a href="/login">Login as user</a></li>
+
+            <% } %>
+
+              <li><a href="/adlogin">Login As Admin</a></li>
+
+              <li><a href="#1">About Us</a></li>
+              <li><a href="">Help</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="motive">
+    <div class="box1">
+      <h1>OUR MOTIVE</h1>
+      <p class="p1"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; We are in the blink of
+        time
+        where managing
+        one's own things itself so difficult. Then consider that of an entire renowed library. With lack of
+        workforce it
+        was indeed very difficult to have manage. Thus we the founders of 3ppleLife have come up with a library
+        Management System that works and feels like on user belongs among books.
+      </p>
+      <p class="p1"> We the founders of 3ppleLife have developed the website to make it a bridge between the use of
+        technology to change traditional methods and ways. We provide an online experience like no other for each
+        user
+        to follow and search for any necessities among books that they require.
+      </p>
+    </div>
+    <div>
+      <img class="img1" src="/images/aim4.jfif" alt="">
+    </div>
+  </div>
+  <div class="project">
+    <div class="box2">
+      <h1>ABOUT OUR PROJECT</h1>
+      <p class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Our team took up this
+        project
+        to create an efficient Library Management System where the user feels
+        excited to use it and is inspired by the content and efforts taken by 3ppleLife. Managing a Library
+        physically
+        was a tedious job. Hence we have made it easier for both the admin as well as the users.</p>
+      <p class="p1">Our entire website consists of both a retro ancient look as well as a modern futuristic look. We
+        have considered it to be a dual version of a single website to give users a taste of both the post and the
+        future. Every page of this website is designed and developed with the atmost care to create the best webpage
+        possible.</p>
+      <p class="p1">The Services of AWS used in our website are Amazon Elastic Beanstalk and Data Pipeline for hosting
+        purpose.</p>
+      <p class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AWS Elastic Beanstalk is an
+        easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP,
+        Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+
+        You can simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity
+        provisioning, load balancing, auto-scaling to application health monitoring. At the same time, you retain full
+        control over the AWS resources powering your application and can access the underlying resources at any time.
+
+        There is no additional charge for Elastic Beanstalk - you pay only for the AWS resources needed to store and run
+        your applications.</p>
+      <!-- <p class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amazon Route 53 is a
+        highly
+        available and scalable cloud Domain Name System (DNS) web service. It is
+        designed to give developers and businesses an extremely reliable and cost effective way to route end users
+        to
+        Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1
+        that computers use to connect to each other.</p> -->
+      <p class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AWS Data Pipeline is a web
+        service that helps you reliably process and move data between different AWS compute and storage services, as
+        well as on-premises data sources, at specified intervals. With AWS Data Pipeline, you can regularly access your
+        data where it’s stored, transform and process it at scale, and efficiently transfer the results to AWS services
+        such as Amazon S3, Amazon RDS, Amazon DynamoDB, and Amazon EMR.
+
+        AWS Data Pipeline helps you easily create complex data processing workloads that are fault tolerant, repeatable,
+        and highly available. You don’t have to worry about ensuring resource availability, managing inter-task
+        dependencies, retrying transient failures or timeouts in individual tasks, or creating a failure notification
+        system. AWS Data Pipeline also allows you to move and process data that was previously locked up in on-premises
+        data silos.</p>
+      <!-- <p class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amazon CloudFront is a web
+        service that speeds up distribution of your static and dynamic web
+        content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through
+        a
+        worldwide network of data centers called edge locations. When a user requests content that you're serving
+        with
+        CloudFront, the request is routed to the edge location that provides the lowest latency (time delay), so
+        that
+        content is delivered with the best possible performance.</p>
+      <p class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AWS Certificate Manager is
+        a
+        service that lets you easily provision, manage, and deploy public and
+        private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and
+        your
+        internal connected resources. SSL/TLS certificates are used to secure network communications and establish
+        the
+        identity of websites over the Internet as well as resources on private networks. AWS Certificate Manager
+        removes
+        the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates.</p> -->
+    </div>
+    <div class="aboutus">
+      <div class="box3" id="1">
+        <h1>About Us</h1>
+        <p class="p1">The main features that our project consists are User Register and Login, Admin Login, Issuing
+          a
+          Book.</p>
+        <div class="box3">
+          <h2>User Signup</h2>
+          <p class="p1">Register a new user to the system. Check's the email address if it's already registered to
+            the
+            system. Check's if all mandatory fields are filled out. User details will be stored in our database
+          </p>
+        </div>
+        <div class="box3">
+          <h2>User Login</h2>
+          <p class="p1">Check's the email and password accurately. Consist's of dashboard and profile view of a
+            user.
+            Retrives the user's data from database.
+          </p>
+        </div>
+        <div class="box3">
+          <h2>Admin Login</h2>
+          <p class="p1">Consist's of dashboard and profile view of a admin. Check the details of user's.
+          </p>
+        </div>
+        <div class="box3">
+          <h2>Front-End And Backend Design</h2>
+          <p class="p1">The languages used to built our project are HTML5, CSS, JavaScript for Front-end and
+            Back-end
+            design is implemented using MongoDb, NodeJS, ExpressJS. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

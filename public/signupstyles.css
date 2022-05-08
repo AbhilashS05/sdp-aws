@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.main {
+    width: 60%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    border-radius: 0.7em;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #A020F0;
+    color: white;
+    padding: 0.7em;
+    margin: 0.9em 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0.7em;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 10em;
+    margin-right: 2em;
+}
+
+.head {
+    text-align: center;
+}
+
+/* Add padding to container elements */
+.container {
+
+    margin: 1em 2em;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+}
+
+.set1 {
+    width: 50%;
+    border-radius: 0.7em;
+    background-color: azure;
+}
+
+.set2 {
+    width: 50%;
+    padding: 0.5em 2em;
+    margin-left: 1em;
+    font-size: 2em;
+    line-height: 2em;
+    background-image: url(/images/log7.jpeg);
+    object-fit: fill;
+    border-radius: 0.7em;
+}
+
+.set3 {
+    width: 50%;
+    border-radius: 0.7em;
+    background-color: azure;
+
+}
+
+.set4 {
+    width: 50%;
+    padding: 1em 2em;
+    margin-left: 1em;
+    font-size: 2em;
+    line-height: 2.6em;
+    background-image: url(/images/log3.jpeg);
+    object-fit: fill;
+    border-radius: 0.7em;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

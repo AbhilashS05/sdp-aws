@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login in Page</title>
+  <link rel="stylesheet" href="signupstyles.css">
+</head>
+
+<!-- <form  class ="signup" action="/signup">
+    <h2>Login</h2>
+    <label for="email">Email</label>
+    <input type="text" name="email" />
+    <div class="email error"></div>
+    <label for="password">Password</label>
+    <input type="password" name="password" />
+    <div class="password error"></div>
+    <div class="sub">
+      <button>Login</button>
+      <a class="sub2" href="/signup">| I'm new here</a>
+    </div>
+
+  </form> -->
+<div class="main">
+  <form class="signup" action="/signup" style="border:1px solid #ccc">
+    <div class="container">
+      <div class="head">
+        <h1>The Great Library of Alexandria</h1>
+        <p> <b> Log in</b></p>
+      </div>
+
+      <hr>
+      <div class="form">
+        <div class="set1">
+          <label for="email">Email</label>
+          <input type="text" name="email" />
+          <div class="email error"></div>
+          <label for="password">Password</label>
+          <input type="password" name="password" />
+          <div class="password error"></div>
+
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+            Remember me
+          </label>
+
+          <p>I'm new here
+            <a href="/signup"> Sign up </a>
+          </p>
+
+          <div class="clearfix">
+            <a href="/"><button type="button" class="cancelbtn">Cancel</button></a>
+            <button class="signupbtn">Get In</button>
+          </div>
+        </div>
+        <div class="set2">Welcome Members of The Great Library of Alexandria
+
+
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<script>
+  const form = document.querySelector('form');
+  const emailError = document.querySelector('.email.error');
+  const passwordError = document.querySelector('.password.error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // reset errors
+    emailError.textContent = '';
+    passwordError.textContent = '';
+
+    // get values
+    const email = form.email.value;
+    const password = form.password.value;
+
+    try {
+      const res = await fetch('/login', {
+        method: 'POST',
+        body: JSON.stringify({ email, password }),
+        headers: { 'Content-Type': 'application/json' }
+      });
+      const data = await res.json();
+      console.log(data);
+      if (data.errors) {
+        emailError.textContent = data.errors.email;
+        passwordError.textContent = data.errors.password;
+      }
+      if (data.user) {
+        location.assign('/dashboard');
+      }
+
+    }
+    catch (err) {
+      console.log(err);
+    }
+  });
+</script>

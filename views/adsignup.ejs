@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signupstyles.css">
+</head>
+
+<!-- <form class="signup" action="/signup"> -->
+<!-- <h2>Sign up</h2>
+    <label for="name">Username</label>
+    <input type="text" name="name" required />
+    <label for="email">Email</label>
+    <input type="text" name="email" required />
+    <div class="email error"></div>
+    <label for="password">Password</label>
+    <input type="password" name="password" required />
+    <div class="password error"></div>
+    <div class="sub">
+      <button>Sign up</button>
+      <a class="sub2" href="/login">| Already have an account</a>
+    </div>
+  </form> -->
+<div class="main">
+    <form class="signup" action="/signup" style="border:1px solid #ccc">
+        <div class="container">
+            <div class="head">
+                <h1>The Great Library of Alexandria</h1>
+                <p> <b>Sign Up</b> </p>
+            </div>
+
+            <hr>
+            <div class="form">
+                <div class="set3">
+
+
+
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter  Your Email" name="email" required />
+                    <div class="email error"></div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter a Password" name="password" required />
+                    <div class="password error"></div>
+
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                        Remember me
+                    </label>
+
+                    <p>Already a user
+                        <a href="/login">Login here!</a>
+                    </p>
+
+                    <div class="clearfix">
+                        <a href="/"><button type="button" class="cancelbtn">Cancel</button></a>
+                        <button class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+                <div class="set4">Sign up to deep dive into the knowledge of Books!
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script>
+    const form = document.querySelector('form');
+    const emailError = document.querySelector('.email.error');
+    const passwordError = document.querySelector('.password.error');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // reset errors
+        emailError.textContent = '';
+        passwordError.textContent = '';
+
+        // get values
+
+        const email = form.email.value;
+        const password = form.password.value;
+
+        try {
+            const res = await fetch('/adsignup', {
+                method: 'POST',
+                body: JSON.stringify({ email, password }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+            const data = await res.json();
+            console.log(data);
+            if (data.errors) {
+                emailError.textContent = data.errors.email;
+                passwordError.textContent = data.errors.password;
+            }
+            if (data.admin) {
+                location.assign('/addashboard');
+            }
+
+        }
+        catch (err) {
+            console.log(err);
+        }
+
+    });
+</script>

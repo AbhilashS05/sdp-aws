@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/
+        jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/
+        bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/
+        js/bootstrap. min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: center;
+            min-height: 5vh;
+            text-transform: uppercase;
+            margin-top: 0.8em;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 15px;
+            font-family: 'OpenSans';
+            background-color: #f5fafe;
+        }
+
+        ul {
+            display: inline;
+            list-style: none;
+            margin: 0 20px;
+
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 20px;
+
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        li a:visited {
+            color: #000;
+            transition: all 0.3s;
+        }
+
+
+        li a:hover,
+        li:visited {
+            color: #daa520;
+        }
+
+        .user {
+            font-weight: bold;
+            font-size: 2em;
+            margin-left: 34%;
+        }
+
+        th {
+            color: #fff;
+        }
+
+        .table {
+            width: fit-content;
+            margin: 2%;
+
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="full">
+
+        <div class="main1">
+
+            <div class="title">The Great Library of <br> Alexandria</div>
+        </div>
+
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="/"> Home</a></li>
+                <li><a href="/"> About Us</a></li>
+                <li><a href="/logout" class="btn">Log out</a></li>
+
+            </ul>
+        </nav>
+        <table class="table table-striped">
+            <tr class="bg-info">
+                <th>Email</th>
+                <th>Name</th>
+                <th>SRN</th>
+            </tr>
+
+            <tbody id="myTable">
+
+            </tbody>
+        </table>
+
+        <script>
+            var myArray = [
+                { 'email': 'terminatora@gmail.com', 'name': 'termi', 'srn': 'r19cs043' },
+                { 'email': 'reva@gmail.com', 'name': 'reva', 'srn': 'r19cs020' },
+                { 'email': 'qwerty@gmail.com', 'name': 'qwerty', 'srn': 'r19cs001' },
+                { 'email': 'user1@gmail.com', 'name': 'user1', 'srn': 'r19cs053' },
+                { 'email': 'gopoal@gmail.com', 'name': 'gopal', 'srn': 'r19cs002' },
+                { 'email': 'modi@gmail.com', 'name': 'modi', 'srn': 'r19cs003' },
+                { 'email': 'krishna@gmail.com', 'name': 'krishna', 'srn': 'r18ca001' },
+                { 'email': 'rrr@gmail.com', 'name': 'RRR', 'srn': 'r18cs032' },
+                { 'email': 'ronald@gmail.com', 'name': 'ronald', 'srn': 'r18vfs034' },
+                { 'email': 'rakohli@gmail.com', 'name': 'rajkohli', 'srn': 'r18sc032' },
+                { 'email': 'swami@gmail.com', 'name': 'swami', 'srn': 'r18sc032' },
+                { 'email': 'trijmo@gmail.com', 'name': 'trump', 'srn': 'r20cs035' },
+                { 'email': 'awsclown@gmail.com', 'name': 'awsclown', 'srn': 'r20ca001' },
+                { 'email': 'tpigion@gmail.com', 'name': 'pigeon', 'srn': 'r19ds005' },
+                { 'email': 'r12023@outlook.com', 'name': 'adaja', 'srn': 'r15cs032' },
+                { 'email': 'queen@gmail.com', 'name': 'queen', 'srn': 'r20dx021' },
+                { 'email': 'merku@gmail.com', 'name': 'merku', 'srn': 'r20rc032' },
+                { 'email': 'adhithya@gmail.com', 'name': 'adthiya', 'srn': 'r19ee068' },
+                { 'email': 'siva23@gmail.com', 'name': 'siva', 'srn': 'r10ec32' },
+                { 'email': 'rajeev@gmail.com', 'name': 'rajeev', 'srn': 'r19cs100' },
+                { 'email': 'rajjed@gmail.com', 'name': 'rajeesh', 'srn': 'r19cs089' },
+
+            ]
+
+            buildTable(myArray)
+
+
+
+            function buildTable(data) {
+                var table = document.getElementById('myTable')
+
+                for (var i = 0; i < data.length; i++) {
+                    var row = `<tr>
+                                    <td>${data[i].email}</td>
+                                    <td>${data[i].name}</td>
+                                    <td>${data[i].name}</td>
+                              </tr>`
+                    table.innerHTML += row
+
+
+                }
+            }
+
+        </script>

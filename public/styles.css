@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* background-color: #c4aead; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.main1 {
+
+  background: url(/images/third.jpeg);
+  /* background-color: #cccccc; */
+  height: 16.9em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 0.5em;
+  font-family: 'Jacques Francois Shadow', cursive;
+
+}
+
+.title {
+  /* color: #daa520; */
+  /* color: #eee600; */
+  /* color: #00ccff; */
+  color: #fcc200;
+  text-align: center;
+  padding-top: 1.3em;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Jacques Francois Shadow', cursive;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  min-height: 5vh;
+  text-transform: uppercase;
+  margin-top: 0.8em;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 15px;
+  font-family: 'OpenSans';
+  background-color: #f5fafe;
+}
+
+
+ul {
+  display: inline;
+  list-style: none;
+  margin: 0 20px;
+
+}
+
+li {
+  display: inline-block;
+  margin: 0 20px;
+
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:visited {
+  color: #000;
+  transition: all 0.3s;
+}
+
+
+li a:hover,
+li:visited {
+  color: #daa520;
+}
+
+.main-container {
+  padding: 5%;
+  padding-top: 1em;
+  /* color: white; */
+  background-color: aliceblue;
+  object-fit: cover;
+}
+
+section {
+  display: block;
+}
+
+h1 {
+  padding-top: 1em;
+  padding-bottom: 1em
+}
+
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, minmax(190px, 2fr));
+
+}
+
+.box a {
+  transition: transform .3s;
+}
+
+.box img {
+  border-radius: .9em;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* cse page*/
+.container {
+  display: block;
+  margin: 2em;
+  /* border: 2px solid black; */
+  width: 95%;
+  height: fit-content;
+}
+
+.python {
+  width: 100%;
+  display: flex;
+  margin: 3.4em;
+  border: 2px solid black;
+  height: fit-content;
+  width: 90%;
+  border-radius: 1em;
+}
+
+.name {
+  width: 80%;
+  /* border: 2px solid black; */
+  padding: 1em;
+
+}
+
+.buttons {
+  /* border: 2px solid black; */
+  display: flex;
+  width: 32%;
+  height: fit-content;
+  padding: 1em 0.7em;
+
+  /* padding-top: 0.7em; */
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-left: 1.9em;
+}
+
+.desc {
+  /* border: 2px solid black; */
+  padding: 0.9em;
+
+}
+
+.brief {
+  /* padding: 0.9em; */
+  padding-top: 0.9em;
+}
+
+.bookpic {
+  padding: 1em;
+  width: 30%;
+  /* border: 2px solid black; */
+}
+
+.CN {
+  display: flex;
+  margin: 3.4em;
+  border: 2px solid black;
+  height: fit-content;
+  width: 90%;
+  border-radius: 1em;
+}
+
+.cs {
+  display: flex;
+  margin: 3.4em;
+  border: 2px solid black;
+  height: fit-content;
+  width: 90%;
+  border-radius: 1em;
+}
+
+/* Profile Page*/
+.first {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid azure;
+  background-color: aliceblue;
+  border-radius: 1em;
+  height: fit-content;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  background-image: url(/images/pro1.jpeg);
+  object-fit: cover;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  width: 30%;
+  height: fit-content;
+  margin-top: 10%;
+}
+
+.profilename {
+  text-align: center;
+
+}
+
+.profile h1 {
+  font-size: 2em;
+}
+
+.list {
+  font-size: x-large;
+  display: flex;
+  color: white;
+}
+
+
+.container {
+  display: block;
+  font-weight: 400;
+}
+
+.profilecontain {
+  display: flex;
+  width: 90%;
+  margin: 3em;
+
+
+}
+
+.items {
+  padding: 1em;
+  line-height: 2.5em;
+}
+
+.item1 {
+  display: flex;
+  padding-right: 1em;
+}

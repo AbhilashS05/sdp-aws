@@ -1,0 +1,227 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+            <h1>Book Slot Booking</h1>
+            <div>
+                <label for="books">Book Title:</label>
+                <select name="books" id="books">
+                    <optgroup label="CSE">
+                        <option value="python">Python Programming for Beginners : The Ultimate Guide for Beginners to
+                            Learn
+                            Python Programming </option>
+                        <option value="cn">Introduction to Computer and Network Security</option>
+                        <option value="cs">The Computer Science Book: A complete introduction to computer science in one
+                            book</option>
+                        <option value="cs1">A Programmer's Guide to Computer Science: A virtual degree for the
+                            self-taught
+                            developer</option>
+                        <option value="algo">Algorithms Illuminated (PART-3)</option>
+                    </optgroup>
+                    <optgroup label="ECE">
+                        <option value="bee">Basic Electrical Engineering</option>
+                        <option value="em">Design for Excellence in ELectronics Manufacturing</option>
+                        <option value="ee">Standard Handbook for Electrical Engineers, Seventeenth Edition</option>
+                    </optgroup>
+                    <optgroup label="MECH">
+                        <option value="med">Shigley’s Mechanical Engineering Design</option>
+                        <option value="meh">Mechanical Engineering Handbook: Guide For Both Theoretical and Formulas
+                        </option>
+                        <option value="fme">Fundamentals of Mechanical Engineering</option>
+                        <option value="ime">Introduction to Mechanical Engineering</option>
+                    </optgroup>
+                    <optgroup label="CIVIL">
+                        <option value="bce">Basic Civil Engineering</option>
+                        <option value="ecc">Estimating and Costing in Civil Engineering</option>
+                        <option value="act">Advanced Construction Technology 5th edition</option>
+                        <option value="cem">Civil Engineering Materials: Introduction and Laboratory</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <div class='col-md-6'>
+                    <label class="">Appointment Time</label>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="confirm()">Submit</button>
+            </div>
+    </div>
+    </form>
+    <script> $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+        function confirm() {
+            alert("Congragulations Your Slot has been booked!!!!!");
+        }
+    </script>
+
+    </div>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking Details</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <style type="text/css">
+        .container {
+            margin-top: 40px;
+        }
+
+        .btn-primary {
+            width: 50%;
+            margin-left: 22%;
+        }
+
+        .titles {
+            padding: 1em;
+            font-weight: 600;
+            font-size: larger;
+        }
+
+        body {
+            background-image: url(/images/pro1.jpeg);
+            object-fit: cover;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+        function confirm() {
+            alert("Congragulations Your Slot has been booked!!!!!");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Schedule an Appointment</div>
+            <div class="titles">
+                <label for="books">Book Title:</label>
+                <select name="books" id="books">
+                    <optgroup label="CSE">
+                        <option value="python">Python Programming for Beginners : The Ultimate Guide for Beginners to
+                            Learn
+                            Python Programming </option>
+                        <option value="cn">Introduction to Computer and Network Security</option>
+                        <option value="cs">The Computer Science Book: A complete introduction to computer science in one
+                            book</option>
+                        <option value="cs1">A Programmer's Guide to Computer Science: A virtual degree for the
+                            self-taught
+                            developer</option>
+                        <option value="algo">Algorithms Illuminated (PART-3)</option>
+                    </optgroup>
+                    <optgroup label="ECE">
+                        <option value="bee">Basic Electrical Engineering</option>
+                        <option value="em">Design for Excellence in ELectronics Manufacturing</option>
+                        <option value="ee">Standard Handbook for Electrical Engineers, Seventeenth Edition</option>
+                    </optgroup>
+                    <optgroup label="MECH">
+                        <option value="med">Shigley’s Mechanical Engineering Design</option>
+                        <option value="meh">Mechanical Engineering Handbook: Guide For Both Theoretical and Formulas
+                        </option>
+                        <option value="fme">Fundamentals of Mechanical Engineering</option>
+                        <option value="ime">Introduction to Mechanical Engineering</option>
+                    </optgroup>
+                    <optgroup label="CIVIL">
+                        <option value="bce">Basic Civil Engineering</option>
+                        <option value="ecc">Estimating and Costing in Civil Engineering</option>
+                        <option value="act">Advanced Construction Technology 5th edition</option>
+                        <option value="cem">Civil Engineering Materials: Introduction and Laboratory</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">User Name :</label>
+                            <!-- <input type="text" class="form-control" name="fname" id="fname"> -->
+                            <p>
+                                <%=user.name %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">SRN : </label>
+                            <p>
+                                <%= user.srn %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <p>
+                                <%= user.email %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class='col-md-6'>
+                        <div class="form-group">
+                            <label class="control-label">Appointment Time</label>
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" onclick="confirm()" class="btn btn-primary" value="Submit">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

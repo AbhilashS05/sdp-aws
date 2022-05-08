@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            background-image: url(/images/pro1.jpeg);
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profilecontain">
+        <div class="first">
+            <div class="profile">
+                <h1>User Preview</h1>
+            </div>
+
+
+            <h3 class="profilename">My Profile </h3>
+            <div class="container">
+                <div class="items">
+                    <div class="item1">
+                        <p>UserName :</p>
+                        <p>
+                            <%=user.name %>
+                        </p>
+
+                    </div>
+                    <div class="item1">
+                        <p> Email :</p>
+                        <p>
+                            <%= user.email %>
+                        </p>
+                    </div>
+
+                    <div class="item1">
+                        <p>Title :</p>
+                        <p>
+                            Student
+                        </p>
+                    </div>
+                    <div class="item1">
+                        <p>Language : </p>
+                        <p>
+                            English
+                        </p>
+                    </div>
+                    <div class="item1">
+                        <p>SRN : </p>
+                        <p>
+                            <%= user.srn %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <ul class="list">
+                <li><a href="/dashboard" class="btn">Dashboard</a></li>
+                <li><a href="/logout" class="btn">Log out</a></li>
+            </ul>
+
+        </div>
+    </div>

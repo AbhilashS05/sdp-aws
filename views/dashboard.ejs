@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .user {
+      font-weight: bold;
+      font-size: 2em;
+      margin-left: 34%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="full">
+
+    <div class="main1">
+
+      <div class="title">The Great Library of <br> Alexandria</div>
+    </div>
+
+
+    <nav class="navbar">
+
+      <ul>
+        <li><a href="/"> Home</a></li>
+        <li><a href="/"> About Us</a></li>
+        <li><a href="/profile"> Profile</a></li>
+        <li><a href="/logout" class="btn">Log out</a></li>
+
+      </ul>
+    </nav>
+
+    <section class="main-container">
+
+      <ul class="user">
+        <% if (user) { %>
+          <li>Welcome ,<%= user.name %>
+          </li>
+
+          <% } else { %>
+            <li><a href="/login">Log in</a></li>
+            <li><a href="/signup" class="btn">Sign up</a></li>
+            <% } %>
+      </ul>
+      <h1 id="home">Domains : </h1>
+      <div class="box">
+
+        <a href="/CSE" target="blank"><img src="images/domain_CSE.jpeg" alt=""></a>
+        <a href="/ECE" target="blank"><img src="images/domain_ece.jpg" alt=""></a>
+        <a href="/civil" target="blank"><img src="images/civil.jpg" alt=""></a>
+        <a href="/Mech" target="blank"><img src="images/domain_Mech.jpeg" alt=""></a>
+      </div>
+      <h1 id="home">Genre : </h1>
+      <div class="box">
+        <a href=""><img src="images/mystery.png" alt=""></a>
+        <a href=""><img src="images/horror.jpeg" alt=""></a>
+        <a href=""><img src="images/fictionn.jpg" alt=""></a>
+        <a href=""><img src="images/thriller.jpg" alt=""></a>
+      </div>
+      <h1 id="home">Languages : </h1>
+      <div class="box">
+        <a href=""><img src="images/domain_CSE.jpeg" alt=""></a>
+        <a href=""><img src="images/domain_ece.jpg" alt=""></a>
+        <a href=""><img src="images/civil.jpg" alt=""></a>
+        <a href=""><img src="images/domain_Mech.jpeg" alt=""></a>
+      </div>
+  </div>
+
+
+</body>
+
+</html>

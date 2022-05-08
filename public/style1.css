@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #e7feff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    width: 100%;
+    height: fit-content;
+}
+
+/* .form {
+    height: 300px;
+    width: 600px;
+    text-align: center;
+    margin-top: 40px;
+} */
